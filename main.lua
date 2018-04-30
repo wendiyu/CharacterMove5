@@ -12,7 +12,7 @@ local physics = require("physics")
 
 physics.start()
 physics.setGravity(0, 20)
---physics.setDrawMode("hybrid")
+physics.setDrawMode("hybrid")
 
 local playerBullets = {} -- Table that holds the players Bullets
 
@@ -204,7 +204,7 @@ function shootButton:touch( event )
     if ( event.phase == "began" ) then
         -- make a bullet appear
         local aSingleBullet = display.newImage( "./assets/sprites/Kunai.png" )
-        aSingleBullet.x = SnowMen.x
+        aSingleBullet.x = SnowMen.x + 200
         aSingleBullet.y = SnowMen.y 
         physics.addBody( aSingleBullet, 'dynamic' )
         -- Make the object a "bullet" type object
@@ -223,7 +223,7 @@ end
 
 
 function checkCharacterPosition( event )
-	-- check every frame to see if character has fallen
+	-- check every frame to see if 0character has fallen
 	if SnowMen.y > display.contentHeight + 400 then
 		SnowMen.x = display.contentCenterX + 190
         SnowMen.y = display.contentCenterY
