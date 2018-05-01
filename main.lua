@@ -12,7 +12,7 @@ local physics = require("physics")
 
 physics.start()
 physics.setGravity(0, 20)
-physics.setDrawMode("hybrid")
+--physics.setDrawMode("hybrid")
 
 local playerBullets = {} -- Table that holds the players Bullets
 
