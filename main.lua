@@ -135,7 +135,7 @@ function checkPlayerBulletsOutOfBounds()
 end
 
 function upArrow:touch( event )
-
+	-- add funtion to arrow 
     if ( event.phase == "ended" ) then
         -- move the character up
         transition.moveBy( SnowMen, { 
@@ -149,9 +149,9 @@ function upArrow:touch( event )
 end
 
 function downArrow:touch( event )
-	-- body
+	-- add funtion to arrow 
 	if ( event.phase == "ended" ) then
-        -- move the character up
+        -- move the character down
         transition.moveBy( SnowMen, { 
         	x = 0, -- move 0 in the x direction 
         	y = 50, -- move up 50 pixels
@@ -163,9 +163,9 @@ function downArrow:touch( event )
 end
 
 function leftArrow:touch( event )
-	-- body
+	-- add funtion to arrow 
 	if ( event.phase == "ended" ) then
-        -- move the character up
+        -- move the character left
         transition.moveBy( SnowMen, { 
         	x = -50, -- move 0 in the x direction 
         	y = 0, -- move up 50 pixels
@@ -177,9 +177,9 @@ function leftArrow:touch( event )
 end
 
 function rightArrow:touch( event )
-	-- body
+	-- add funtion to arrow 
 	if ( event.phase == "ended" ) then
-        -- move the character up
+        -- move the character right
         transition.moveBy( SnowMen, { 
         	x = 100, -- move 0 in the x direction 
         	y = 0, -- move up 50 pixels
@@ -191,7 +191,7 @@ function rightArrow:touch( event )
 end
 
 function jumpButton:touch( event )
-	-- body
+	-- add funtion to button
 	if ( event.phase == "ended" ) then
         -- move the character jump
        SnowMen:setLinearVelocity( 0, -750 )
